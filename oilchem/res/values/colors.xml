@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="oil_red">#9c0e1c</color>
+    <color name="blue">#a5172a</color>
+    <color name="blue_light">#000066</color>
+    <color name="oil_text_color_day">#000000</color>
+    <color name="oil_text_color_night">#ffffff</color>
+    <color name="oil_background_color_day">#ffffff</color>
+    <color name="oil_background_color_night">#000000</color>
+    <color name="red_light">#ED3648</color>
+    <color name="white">#ffffff</color>
+</resources>

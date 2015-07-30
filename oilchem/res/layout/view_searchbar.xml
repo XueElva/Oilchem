@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText android:id="@+id/view_searchbar_edittext_search"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+   		android:background="@drawable/search_box"
+   		android:paddingLeft="10dip"
+        android:hint="@string/search_sms"/>
+    <ImageView 
+        android:id="@+id/view_searchbar_image_btn"
+	    android:layout_width="40dip"
+	    android:layout_height="40dip"
+	    android:layout_alignRight="@id/view_searchbar_edittext_search"
+	    android:layout_marginRight="10dip"
+	    android:layout_centerVertical="true"
+	    android:background="@drawable/search_button"/>
+</RelativeLayout>

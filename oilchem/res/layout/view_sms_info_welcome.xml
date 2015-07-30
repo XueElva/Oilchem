@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="8dip"
+    android:background="@drawable/gray_border"
+    android:paddingBottom="10dip"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingTop="5dip" >
+
+    <TextView
+        android:id="@+id/view_sms_welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:paddingLeft="3dip"
+        android:text="成品油寿光联盟"
+        android:textColor="#666666"
+        android:textSize="@dimen/fontsize_sms_small" />
+
+    <TextView
+        android:id="@+id/view_sms_welcome_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/view_sms_welcome_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/view_sms_welcome_title"
+        android:text="10:02:16"
+        android:textSize="@dimen/fontsize_sms_small" />
+
+    <TextView
+        android:id="@+id/view_sms_welcome_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_sms_welcome_title"
+        android:layout_marginTop="12dip"
+        android:lineSpacingExtra="2dip"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:text="这里是测试这里是测试这里是测试这里是测试这里是测试这里是测试这里是测试这里是测试这里是测试这里是测试这里是测试"
+        android:textSize="@dimen/fontsize_sms_normal" />
+
+    <Button
+        android:id="@+id/layout_sms_history_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_sms_welcome_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@+id/layout_sms_reply_btn"
+        android:background="@android:color/white"
+        android:text="查看历史"
+        android:textColor="#666666" />
+
+    <Button
+        android:id="@+id/layout_sms_reply_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view_sms_welcome_content"
+        android:layout_below="@+id/view_sms_welcome_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@android:color/white"
+        android:text="回复"
+        android:textColor="#666666" />
+
+    <Button
+        android:id="@+id/collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_sms_welcome_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="收藏"
+        android:textColor="#666666" 
+        android:background="@color/white"
+        android:drawableRight="@drawable/notcollected"/>
+
+</RelativeLayout>

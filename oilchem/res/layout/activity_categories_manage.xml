@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+    
+    <net.oilchem.communication.sms.view.TitleBar android:id="@+id/activity_categoriesmanage_titlebar" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+    	>
+    </net.oilchem.communication.sms.view.TitleBar>
+    
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/activity_categoriesmanage_batchset"
+            android:layout_below="@id/activity_categoriesmanage_titlebar"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="@dimen/titlebar_height" >
+
+            <TextView
+                android:id="@+id/activity_setting_batch_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/titlebar_height"
+                android:textSize="@dimen/fontsize_common_common"
+                android:gravity="center"
+			    android:layout_gravity="center"
+			    android:textColor="#6a6a6a"
+                android:text="@string/batch_setting_text" />
+
+            <TextView
+                android:id="@+id/activity_setting_batch_close"
+                android:layout_marginLeft="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/titlebar_icon_height"
+                android:textSize="@dimen/fontsize_common_common"
+			    android:gravity="center"
+			    android:layout_gravity="center"
+                android:text="@string/batch_setting_close"
+                android:textColor="@android:color/white"
+			    android:background="@drawable/taber_selected" />
+            
+            <TextView
+                android:id="@+id/activity_setting_batch_open"
+                android:layout_marginLeft="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/titlebar_icon_height"
+                android:textSize="@dimen/fontsize_common_common"
+			    android:gravity="center"
+			    android:layout_gravity="center"
+                android:text="@string/batch_setting_open"
+                android:textColor="@android:color/white"
+			    android:background="@drawable/taber_selected" />
+            
+        </LinearLayout>
+    
+    <ImageView android:id="@+id/activity_categories_footerholder" 
+        android:layout_height="6dip"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        />
+	<RelativeLayout android:id="@+id/activity_setting_footer"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dip"
+	    android:layout_above="@id/activity_categories_footerholder"
+    	android:background="?oil_background_color"
+	    android:orientation="vertical">
+        <ImageView android:id="@+id/activity_setting_footer_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/tel"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            />
+        <TextView android:id="@+id/activity_setting_footer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_setting_footer_image"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="2dip"
+            android:textSize="@dimen/fontsize_sms_small"
+            android:textColor="#6a6a6a"
+            android:text="联系客服开通更多资讯!"/>
+        <TextView android:id="@+id/activity_setting_footer_contacter" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/activity_setting_footer_text"
+            android:layout_below="@id/activity_setting_footer_text"
+            android:textSize="@dimen/fontsize_sms_small"
+            android:textColor="#007bbb"
+            android:text="隆众客服 0533-2591688"/>
+	</RelativeLayout>
+	<ListView
+	    android:id="@+id/activity_setting_list_categories"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/activity_categoriesmanage_batchset"
+	    android:layout_above="@id/activity_setting_footer"
+	    android:divider="@null"
+    	android:background="?oil_background_color"
+	    android:listSelector="@android:color/transparent"></ListView>
+	
+</RelativeLayout>

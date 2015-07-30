@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText android:id="@+id/view_sendhbar_edittext"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+   		android:background="@drawable/search_box"
+   		android:paddingLeft="10dip"
+        android:hint="@string/chat_send"/>
+    <Button
+            android:id="@+id/view_sendbar_btn"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/view_sendhbar_edittext"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:text="发送"/>
+</RelativeLayout>

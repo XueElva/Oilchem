@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontsize_sms_large">18sp</dimen>
+    <dimen name="fontsize_sms_normal">16sp</dimen>
+    <dimen name="fontsize_sms_small">14sp</dimen>
+    
+    <dimen name="fontsize_common_large">21sp</dimen>
+    <dimen name="fontsize_common_common">17sp</dimen>
+    
+    <dimen name="titlebar_margin">15dip</dimen>
+    <dimen name="titlebar_width">50dip</dimen>
+    
+    <dimen name="authcode_width">135dip</dimen>
+    <dimen name="authcode_height">30dip</dimen>
+    
+    <dimen name="group_title_width">260dip</dimen>
+     <!-- titlebar -->
+    <dimen name="titlebar_height">42dip</dimen>
+    <dimen name="titlebar_logo_height">35dip</dimen>
+    <dimen name="titlebar_logo_width">115dip</dimen>
+    <dimen name="titlebar_like_height">35dip</dimen>
+    <dimen name="titlebar_like_width">35dip</dimen>
+	<dimen name="titlebar_table_height">30dip</dimen>
+    <dimen name="titlebar_table_width">200dip</dimen>
+    <dimen name="titlebar_table_commit_width">140dip</dimen>
+    
+    <dimen name="titlebar_icon_height">35dip</dimen>
+    <dimen name="titlebar_title_size">16sp</dimen>
+    <dimen name="titlebar_right_size">14sp</dimen>
+    
+    <dimen name="view_smslist_group_height">60dip</dimen>
+</resources>

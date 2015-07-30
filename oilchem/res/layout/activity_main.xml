@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/activity_main_title_bar"
+        layout="@layout/title_bar_main" />
+
+    <LinearLayout
+        android:id="@+id/activity_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_main_title_bar"
+        android:background="@drawable/index_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/activity_main_layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="8"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <net.oilchem.communication.sms.view.SearchBar
+                android:id="@+id/activity_main_view_searchbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip" >
+            </net.oilchem.communication.sms.view.SearchBar>
+
+            <TextView
+                android:id="@+id/activity_main_text_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/activity_main_view_searchbar"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:paddingTop="20dip"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/activity_main_layout_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:gravity="right"
+            android:paddingRight="20dip"
+            android:text="@string/register"
+            android:textColor="@color/oil_red"
+            android:textSize="@dimen/fontsize_sms_normal" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/activity_main_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2" >
+
+            <FrameLayout
+                android:id="@+id/activity_main_layout_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:background="@color/oil_red"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/activity_main_text_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/oil_red"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/fontsize_common_common" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/go" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

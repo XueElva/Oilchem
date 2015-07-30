@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <net.oilchem.communication.sms.view.TitleBar android:id="@+id/activity_webview_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height">
+    </net.oilchem.communication.sms.view.TitleBar>
+    
+    <WebView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_webview_webview"/>
+
+</LinearLayout>

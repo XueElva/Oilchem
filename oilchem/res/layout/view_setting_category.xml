@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal"
+    android:padding="3dip"
+    android:background="@drawable/gray_border"
+    android:layout_marginTop="8dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip">
+    <TextView android:id="@+id/view_setting_text_category"
+        android:layout_weight="6"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="left|center_vertical"
+        android:textSize="@dimen/fontsize_sms_small"
+        android:textColor="#6a6a6a"
+        android:text="北京万象新天北京万象新天北京万象新天"
+   	 	android:paddingLeft="8dip"/>
+    <net.oilchem.communication.sms.view.TaberView android:id="@+id/view_setting_view_taber"
+        android:layout_weight="4"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="2dip"
+        android:gravity="center_vertical"
+   	 	android:paddingTop="5dip"
+   	 	android:paddingBottom="5dip"
+   	 	android:paddingRight="8dip"/>
+</LinearLayout>

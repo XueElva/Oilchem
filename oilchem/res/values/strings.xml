@@ -1,0 +1,89 @@
+<resources>
+
+    <string name="app_name">隆众短讯</string>
+	<string name="toast_network_method_error">当前网络不可用,请检查您的网络!</string>
+	<string name="toast_should_not_empty">内容不能为空!</string>
+	<string name="toast_username_password_should_not_empty">用户名,密码不能为空.</string>
+	<string name="toast_latestversion">当前版本已是最新版本!</string>
+	<string name="toast_logout">退出登录成功!</string>
+	<string name="toast_logout_error">退出登录失败!</string>
+	<string name="toast_clear_ok">缓存清除成功!</string>
+	<string name="toast_clear_error">缓存清除失败!</string>
+	<string name="toast_clipboard">内容复制到剪切板!</string>
+	
+	<string name="dialog_getanupgrade">发现新版本</string>
+	<string name="dialog_ok">确定下载</string>
+	<string name="dialog_cancel">取消</string>
+	
+	<string name="toast_tel_authcode_should_not_empty">电话号码,验证码,预设密码不能为空</string>
+	<string name="toast_tel_should_not_empty">电话号码不能为空</string>
+	<string name="taber_setting_category">关闭_推送</string>
+	<string name="taber_setting_adptermode">按时间_按组名</string>
+	<string name="taber_setting_adptermode_time">按时间</string>
+	<string name="taber_setting_adptermode_category">按组名</string>
+	<string name="taber_setting_open">推送</string>
+	<string name="taber_setting_close">关闭</string>
+	<string name="taber_setting_theme">关闭_开启</string>
+	<string name="taber_setting_theme_close">关闭</string>
+	<string name="taber_setting_theme_open">开启</string>
+	<string name="taber_setting_fontsize">大_中_小</string>
+	<string name="taber_setting_fontsize_big">大</string>
+	<string name="taber_setting_fontsize_normal">中</string>
+	<string name="taber_setting_fontsize_small">小</string>
+	<string name="batch_setting_text">批量设置</string>
+	<string name="batch_setting_open">全部推送</string>
+	<string name="batch_setting_close">全部关闭</string>
+	
+	<string name="cachetime_title">设置信息缓存保留时间:</string>
+	<string name="cachetime_forever">永久保留</string>
+	<string name="cachetime_four">120天</string>
+	<string name="cachetime_three">90天</string>
+	<string name="cachetime_two">60天</string>
+	
+	<string name="login">立即登录</string>
+	<string name="register">立即注册</string>
+	<string name="enter">立即进入</string>
+	<string name="register_submit">提交注册</string>
+	<string name="phonecode_get">获取短信</string>
+	<string name="main_contacter">快捷开通请致电: %s</string>
+	<string name="main_message">隆众短讯通 v1.1</string>
+	<string name="search_sms">搜索短讯</string>
+
+    <string name="chat_send">在此输入您的需求</string>
+    <string name="title_chatlist_native">信息回复</string>
+
+	<string name="activity_setting_account">帐号:</string>
+	<string name="activity_setting_mode">夜间模式</string>
+	<string name="activity_setting_adapter_mode">短讯分类方式</string>
+	<string name="activity_setting_push_sound">推送声音</string>
+	<string name="activity_setting_push_vibrate">推送震动</string>
+	<string name="activity_setting_font_size">字体大小</string>
+	<string name="activity_setting_cache_time">信息缓存保留时间</string>
+	<string name="activity_setting_about">关于隆众资讯</string>
+	<string name="activity_setting_suggestion">意见与投诉</string>
+	<string name="activity_setting_upgrade">检查更新(%s)</string>
+	<string name="activity_setting_logout">注销登录</string>
+	<string name="activity_setting_clearcache">清除缓存</string>
+	
+	<string name="title_login">登录隆众短讯通</string>
+	<string name="title_register">注册隆众短讯通</string>
+	<string name="title_welcome">隆众短讯</string>
+    <string name="title_shangji">隆众商机</string>
+	<string name="title_setting">应用设置</string>
+	<string name="title_push">短讯推送</string>
+	<string name="title_smslist_native">本地短讯搜索</string>
+	<string name="title_smslist_online">云端短讯搜索</string>
+	<string name="title_smslist_push">实时短讯</string>
+	
+	<string name="weekday_monday">星期一</string>
+	<string name="weekday_tuesday">星期二</string>
+	<string name="weekday_wednesday">星期三</string>
+	<string name="weekday_thursday">星期四</string>
+	<string name="weekday_friday">星期五</string>
+	<string name="weekday_saturday">星期六</string>
+	<string name="weekday_sunday">星期日</string>
+	<string name="weekday_today">今天</string>
+	<string name="loading">正在加载...</string>
+
+
+</resources>

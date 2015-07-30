@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?oil_background_color"
+    android:orientation="vertical" >
+
+    <net.oilchem.communication.sms.view.SmsListTitleBar
+        android:id="@+id/activity_welcome_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height" />
+
+    <net.oilchem.communication.sms.view.SearchBar
+        android:id="@+id/activity_welcome_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+    </net.oilchem.communication.sms.view.SearchBar>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        android:id="@+id/activity_welcome_expandablelistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_welcome_searchbar"
+        android:layout_below="@id/activity_welcome_titlebar"
+        android:layout_margin="5dip"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:groupIndicator="@null"
+        android:listSelector="@android:color/transparent" >
+    </com.handmark.pulltorefresh.library.PullToRefreshExpandableListView>
+
+</RelativeLayout>

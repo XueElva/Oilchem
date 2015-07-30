@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="fontsize_sms_large">17sp</dimen>
+    <dimen name="fontsize_sms_normal">15sp</dimen>
+    <dimen name="fontsize_sms_small">13sp</dimen>
+    
+    <dimen name="fontsize_common_large">19sp</dimen>
+    <dimen name="fontsize_common_common">17sp</dimen>
+    
+	<!-- titlebar -->
+    <dimen name="titlebar_height">38dip</dimen>
+    <dimen name="titlebar_icon_height">32dip</dimen>
+    <dimen name="titlebar_title_size">15sp</dimen>
+    <dimen name="titlebar_right_size">13sp</dimen>
+    
+    <dimen name="view_smslist_group_height">50dip</dimen>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_smslist_group_height"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="8dip"
+    android:background="@drawable/gray_border" >
+
+    <ImageView
+        android:id="@+id/view_smslist_group_indicator"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="20dip"
+        android:background="@drawable/pack" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/view_smslist_group_weekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dip"
+            android:layout_marginRight="55dip"
+            android:gravity="left"
+            android:text="今天今天今天今天今天今天"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/fontsize_common_common" />
+
+        <TextView
+            android:id="@+id/view_smslist_group_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dip"
+            android:gravity="center"
+            android:text="2014-01-26"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/view_smslist_group_infocount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dip"
+            android:background="#dddddd"
+            android:gravity="center"
+            android:padding="3dip"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</FrameLayout>

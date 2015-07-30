@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="oilchem">
+    <output-path>$PROJECT_DIR$/out/artifacts/oilchem</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyAlias" value="oil" />
+        <option name="keyPassword" value="b2lsY2hlbQ==" />
+        <option name="keyStorePassword" value="b2lsY2hlbQ==" />
+        <option name="keyStoreUrl" value="file://$PROJECT_DIR$/oilchem.keystore" />
+        <option name="proGuardCfgFiles">
+          <list>
+            <option value="file://%MODULE_SDK_HOME%/tools/proguard/proguard-android.txt" />
+          </list>
+        </option>
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="oilchem.apk">
+      <element id="android-final-package" facet="oilchem/android/Android" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?oil_background_color">
+    <net.oilchem.communication.sms.view.TitleBar android:id="@+id/activity_smslist_titlebar" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+    	/>
+    <net.oilchem.communication.sms.view.SearchBar android:id="@+id/activity_smslist_searchbar"
+        android:layout_width="match_parent"
+	    android:layout_height="50dip"
+        android:layout_marginTop="5dip"
+	   	android:paddingLeft="5dip"
+	   	android:paddingRight="5dip">
+    </net.oilchem.communication.sms.view.SearchBar>
+	<ListView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/acivity_smslist_listview"
+	    android:layout_marginTop="5dip"
+	   	android:paddingLeft="10dip"
+	   	android:paddingRight="10dip"
+	   	android:listSelector="@android:color/transparent"
+	    android:divider="@null">
+	</ListView>
+</LinearLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/oil_theme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <net.oilchem.communication.sms.view.TitleBar
+        android:id="@+id/activity_setting_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height" >
+    </net.oilchem.communication.sms.view.TitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/activity_setting_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    style="@style/oil_setting_black"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_account" />
+
+                <TextView
+                    android:id="@+id/activity_setting_text_username"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/oil_setting"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_mode" />
+
+                <net.oilchem.communication.sms.view.TaberView
+                    android:id="@+id/activity_setting_taber_mode"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:padding="4dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    style="@style/oil_setting"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_adapter_mode" />
+
+                <net.oilchem.communication.sms.view.TaberView
+                    android:id="@+id/activity_setting_taber_adapter_mode"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:padding="4dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    style="@style/oil_setting"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_push_sound" />
+
+                <net.oilchem.communication.sms.view.TaberView
+                    android:id="@+id/activity_setting_taber_push_sound"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:padding="4dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:visibility="visible" >
+
+                <TextView
+                    style="@style/oil_setting"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_push_vibrate" />
+
+                <net.oilchem.communication.sms.view.TaberView
+                    android:id="@+id/activity_setting_taber_push_vibrate"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:padding="4dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    style="@style/oil_setting"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_font_size" />
+
+                <net.oilchem.communication.sms.view.TaberView
+                    android:id="@+id/activity_setting_taber_fontsize"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:padding="4dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    style="@style/oil_setting"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_cache_time" />
+
+                <TextView
+                    android:id="@+id/activity_setting_text_cache"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/cachetime_forever"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    android:id="@+id/activity_setting_text_clearcache"
+                    style="@style/oil_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_clearcache" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    android:id="@+id/activity_setting_text_about"
+                    style="@style/oil_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_about" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    android:id="@+id/activity_setting_text_suggestion"
+                    style="@style/oil_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_suggestion" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    android:id="@+id/activity_setting_text_upgrade"
+                    style="@style/oil_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_upgrade" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_border"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    android:id="@+id/activity_setting_text_logout"
+                    style="@style/oil_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/activity_setting_logout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_marginTop="8dip"
+                android:background="@android:color/transparent"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

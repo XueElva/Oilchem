@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:gravity="center">
+	<ImageView
+	    android:layout_width="159dip"
+	    android:layout_height="70dip"
+	    android:src="@drawable/index_logo" 
+	    android:layout_gravity="center_vertical"
+	    android:layout_marginLeft="15dip"
+	    />
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="2dip"
+	    android:background="@drawable/index_line"
+		android:layout_gravity="bottom"/>
+</FrameLayout>

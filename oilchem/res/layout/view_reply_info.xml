@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip">
+
+    <TextView android:id="@+id/layout_reply"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="right"
+              android:padding="8dip"
+              android:text="这里是回复这里是回复"
+              android:textSize="@dimen/fontsize_sms_small"
+              android:layout_alignParentRight="true"/>
+
+    <TextView android:id="@+id/layout_reply_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="right"
+              android:text="2014-01-24 10:02:16"
+              android:padding="8dip"
+              android:textSize="10sp"
+
+              android:layout_below="@id/layout_reply"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true"/>
+</RelativeLayout>

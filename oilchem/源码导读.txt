@@ -1,0 +1,81 @@
+项目名：oilchem
+项目包名：net.oilchem.communication.sms
+android签名文件oilchem.keystore，在当前目录 //打包密码:oilchem 
+===============================================================
+该项目目录结构为标准的android项目目录结构，命名是按android规范命名的，代码注释较少，类名，方法名，参数名皆是英文，理解应用逻辑，即能通过命名了解其作用。
+其中libs放引用的jar文件，其中几个开源文件源码：
+asynchttp.jar https://github.com/loopj/android-async-http
+pulltorefresh.jar https://github.com/chrisbanes/Android-PullToRefresh
+universal-image-loader-1.8.6.modedbycloud https://github.com/nostra13/Android-Universal-Image-Loader (本人做了不同cdn同一图片使用一份缓存的优化)
+
+src文件，以下是源码解析：
+net.oilchem.communication.sms: 常用类包
+	Constant.java 常量类
+	OilchemApplication.java Application类，应用初始化操作
+net.oilchem.communication.sms.activity: activity类包，对应页面布局xml在setContent(R.layout.xxx)能引用到
+	LoginActivity.java 登录页
+	MainActivity.java 进入应用第一页
+	NotificationManagerActivity.java 推送管理页
+	OilActivityBase.java activity基类
+	OilchemSmsListActivity.java 云搜、本地搜、推送展示页
+	OilchemWelcomeActivity.java “7天”页
+	RegisterActivity.java 注册页
+	SettingActivity.java 设置页
+	WebViewActivity.java webview页//设置里的关于、意见反馈页
+net.oilchem.communication.sms.adapter: adapter类包，均继承自BaseAdapter
+	NotificationCategoriesAdapter.java 推送管理页adapter
+	SmsListAdapter.java	云搜、本地搜、推送展示adapter
+	SmsListCategorierExpandableAdapter.java “7天”页，按组排列的adapter
+	SmsListExpandableAdapter.java “7天”页，按时间排列的adapter
+net.oilchem.communication.sms.data: 数据库相关文件类包
+	OilchemContract.java 数据库声明，结构，以及建表、删表语句
+	OilchemDbHelper.java 数据库Helper类，数据库创建、升级、降级逻辑
+net.oilchem.communication.sms.data.model: 项目接口映射文件包
+	Data*.java 对应接口映射，均继承自OilchemResponseData.java
+	其中需要说明的是:OilResponse.java 接口定义的response总结构 OilchemResponseData.java 接口结构的data部分
+	SmsInfo.java 该项目主要映射“短信”类，顾将其单独写
+net.oilchem.communication.sms.handler: 接口处理者.. handler，这里需要看源码才好理解，文字不好描述。大概解释一下，就是哪里有请求，需要实现IRequestListener类，请求传的参数需要有个HandlerParams对象,具体实现可以参考现有代码
+	HandlerBase.java
+	HandlerFactory.java
+	HandlerParams.java
+	BinaryHandlerBase.java
+	IRequestListener.java 
+	IBinaryRequestListener.java 
+net.oilchem.communication.sms.receiver: 
+	AlarmReceiver.java 推送需要的“闹钟”通知者
+	NetWorkReceiver.java 网络变更通知者
+net.oilchem.communication.sms.service:
+	NotificationCenterService.java
+	PullNotificationService.java
+	WakefulIntentService.java
+	WakefulListener.java
+net.oilchem.communication.sms.util:
+	ApiUtil.java 接口实现，实现了IApi接口
+	DatabaseUtil.java
+	IApi.java 接口地址
+	ImageUtil.java 图片工具类
+	JsonUtil.java 接口json解析，使用的gson库
+	NetworkUtil.java
+	OilchemApiClient.java 接口实现client
+	OilLog.java
+	OilUtil.java 常用工具类
+	SharedPreferenceUtil.java sharedPreference工具类
+	UIUtil.java 适配ui工具类
+net.oilchem.communication.sms.view: 一些应用复用的view类包
+	SearchBar.java 
+	SettingCellView.java 推送管理页单个view
+	SmsListGroupView.java “7天” 页group view
+	SmsView.java OilchemSmsListActivity页使用的 smsinfo view
+	SmsWelcomeView.java
+	TaberView.java 设置页用到的开关
+	TitleBar.java
+	
+res文件，布局文件夹
+数据库结构：
+CREATE TABLE oilchem_sms (_id INTEGER PRIMARY KEY,
+	title TEXT,
+	content TEXT,
+	group_id TEXT,
+	group_name TEXT,
+	ts TEXT );
+详见net.oilchem.communication.sms.data

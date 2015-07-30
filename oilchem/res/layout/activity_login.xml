@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <net.oilchem.communication.sms.view.TitleBar android:id="@+id/activity_login_titlebar" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+    	/>
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	   	android:paddingLeft="20dip"
+	   	android:paddingRight="20dip"
+	   	android:background="@drawable/index_bg"
+	    >
+	    <TextView android:id="@+id/activity_login_text_footer"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dip"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    android:textSize="14sp"
+		    android:text="@string/main_contacter"
+		    android:textColor="@android:color/black"
+		    android:layout_alignParentBottom="true"/>
+	    <TextView android:id="@+id/activity_login_text_register" 
+		    android:layout_width="match_parent"
+		    android:layout_height="60dip"
+	        android:layout_marginTop="5dip"
+	        android:layout_marginBottom="5dip"
+	        android:layout_above="@id/activity_login_text_footer"
+	        android:text="@string/register"
+		    android:textSize="@dimen/fontsize_common_common"
+		    android:gravity="center"
+		    android:layout_gravity="center"
+		    android:textColor="@android:color/white"
+		    android:background="@drawable/button">
+		</TextView>
+		
+	    <LinearLayout android:id="@+id/activity_login_username"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dip"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="20dip"
+	        android:layout_marginBottom="5dip"
+	   		android:background="@drawable/search_box">
+	   		<ImageView 
+	   		    android:layout_width="40dip"
+	   		    android:layout_height="40dip"
+	   		    android:layout_marginTop="1dip"
+	   		    android:src="@drawable/username"
+	   		    android:layout_gravity="center"/>
+	   		<EditText android:id="@+id/activity_login_text_username"
+	   		    android:layout_width="match_parent"
+	   		    android:layout_height="match_parent"
+	   		    android:layout_marginLeft="5dip"
+	   		    android:hint="登录名"
+	   		    android:inputType="phone"
+	   		    android:layout_gravity="center"
+	   		    android:background="@null"
+	   		    android:gravity="left|center_vertical"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:id="@+id/activity_login_password"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dip"
+	        android:orientation="horizontal"
+	        android:layout_below="@id/activity_login_username"
+	        android:layout_marginTop="5dip"
+	        android:layout_marginBottom="5dip"
+	   		android:background="@drawable/search_box">
+	   		<ImageView 
+	   		    android:layout_width="40dip"
+	   		    android:layout_height="40dip"
+	   		    android:layout_marginTop="1dip"
+	   		    android:src="@drawable/password"
+	   		    android:layout_gravity="center"/>
+	   		<EditText android:id="@+id/activity_login_text_password"
+	   		    android:layout_width="match_parent"
+	   		    android:layout_height="match_parent"
+	   		    android:layout_marginLeft="5dip"
+	   		    android:layout_gravity="center"
+	   		    android:password="true"
+	   		    android:hint="密码"
+	   		    android:background="@null"
+	   		    android:gravity="left|center_vertical"/>
+	    </LinearLayout>
+	    
+		<TextView android:id="@+id/activity_main_text_login"
+		    android:layout_width="match_parent"
+		    android:layout_height="60dip"
+	        android:layout_marginTop="5dip"
+	        android:layout_marginBottom="5dip"
+	        android:text="@string/login"
+		    android:textSize="@dimen/fontsize_common_common"
+		    android:gravity="center"
+		    android:layout_below="@id/activity_login_password"
+		    android:layout_gravity="center"
+		    android:textColor="@android:color/white"
+		    android:background="@drawable/button" />
+	</RelativeLayout>
+	
+</LinearLayout>

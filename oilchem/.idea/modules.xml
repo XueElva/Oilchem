@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../asynchttp/asynchttp.iml" filepath="$PROJECT_DIR$/../asynchttp/asynchttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oilchem.iml" filepath="$PROJECT_DIR$/oilchem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/../pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../viewpagerlibrary/viewpagerlibrary.iml" filepath="$PROJECT_DIR$/../viewpagerlibrary/viewpagerlibrary.iml" />
+    </modules>
+  </component>
+</project>
+
